@@ -20,7 +20,7 @@ const Home = () => {
               A Computer Science Master's student, excels in data science, web development, and blockchain. I am proefficient in various programmming languages and technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/Rohith_Pavuluru_Resume (2).pdf" download = "Rohith_Pavuluru_Resume">
+              <a href="/Rohith_Pavuluru_Resume (4).pdf" download = "Rohith_Pavuluru_Resume">
                 <Button varient="outline" size="lg" className="uppercase flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl"/>

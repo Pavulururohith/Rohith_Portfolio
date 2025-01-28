@@ -17,6 +17,15 @@ import WorkSliderBtns from "@/components/WorkSliderBtns"
 const projects = [
   {
     num: '01',
+    category: 'AWS',
+    title: "Used Car Analysis with AWS",
+    description: "Analyzed a large used car dataset using AWS and PySpark to identify key factors influencing car prices, such as brand, model, mileage, and fuel type. Conducted Exploratory Data Analysis (EDA) and visualized trends using Matplotlib and Seaborn. Built and evaluated predictive models (Linear Regression, Random Forest, XGBoost) to estimate car prices with high accuracy. Utilized AWS services for scalable data storage and processing, leveraging PySpark for distributed analytics. The project provided valuable insights into market trends and car pricing, offering a tool for informed decision-making for buyers and sellers in the used car market.",
+    stack: [{ name:"AWS (Amazon Web Services)" }, {name: "PySpark"}, {name:"SQL"}],
+    image: "/aws.png",
+    github: "https://github.com/Pavulururohith/used_car_analysis_with_aws",
+  },
+  {
+    num: '02',
     category: 'Web Development',
     title: "CourseCraft",
     description: "Developed a comprehensive Learning Management System by implementing key features including user MFA, dashboards, course search, and multimedia file submission. Engineered backend architecture utilizing Firebase and AWS cloud services, integrating Google API and Duo Authentication API for enhanced security. Contributed to frontend development, backend logic, database management, and deployment processes in an Agile team environment.",
@@ -26,7 +35,7 @@ const projects = [
     github: "https://github.com/nihalshetty-boop/P565-SP24-LMS-G21-Backend",
   },
   {
-    num: '02',
+    num: '03',
     category: 'Machine Learning and Data Science',
     title: "Detecting Phishing URL's",
     description: "Enhanced phishing detection by achieving an accuracy of 0.9059 using a Gradient Boosting Classifier. Utilized precision, recall, and F1-score metrics, demonstrating strong performance across all categories. Successfully optimized a Gradient Boosting model to reach 0.901 accuracy under random sampling conditions and 1.0 accuracy with weighted sampling. Despite the high overall accuracy, identified and addressed challenges in correctly classifying phishing and malware URLs, leading to improved model robustness.",
@@ -35,7 +44,7 @@ const projects = [
     github: "https://github.com/Pavulururohith/Detecting-phishing-URL-s",
   },
   {
-    num: '03',
+    num: '04',
     category: 'front-end and Blockchain',
     title: "Blood Registry using Blockchain",
     description: "Directed the front-end development and supported smart contract creation using Solidity for a web portal integrated with the Ethereum Blockchain. Implemented AES encryption for secure data handling. Part of the winning team in Asia's largest innovation hackathon, recognized for enabling transparent blood information management, ensuring privacy and integrity. Blockchain Implementation for Blood Registry Using Ethereum Network (Under Review) A research paper analyzing the project\’s implementation and addressing Ethereum’s limitations in the context of blood registry management.",
@@ -44,7 +53,7 @@ const projects = [
     github: "",
   },
   {
-    num: '04',
+    num: '05',
     category: 'Full Stack and machine learning',
     title: "Smart Form Using ML",
     description: "Created a system to identify and prevent repetitive selection of projects by recognizing closely related titles for our university. Implemented cosine similarity and Natural Language Processing (NLP) techniques to analyze and compare project titles with similar meanings achieving a 95\% accuracy rate and reducing project selection time by 40\%. Developed the application using Django and designed an intuitive user interface to facilitate easy interaction with the system. This project was assigned by our professor, who entrusted us with the task, reflecting the confidence placed in our ability to deliver a functional and reliable solution for the institution then successfully implemented across 5 university departments.",
@@ -53,7 +62,7 @@ const projects = [
     github: "https://github.com/Pavulururohith/Smart-Form",
   },
   {
-    num: '05',
+    num: '06',
     category: 'full stack and machine learning',
     title: "Textalyzer",
     description: "Implemented an extractive text summarization feature using the TextRank algorithm with the Gensim Python library. Designed the tool to condense lengthy articles into shorter, meaningful summaries while preserving key information. Built a QnA system that processes large amounts of text data to answer user queries. Utilized the TF-IDF (Term Frequency-Inverse Document Frequency) algorithm to extract the most relevant answers while maintaining the original context. Integrated the summarization and QnA functionalities into a user-friendly web application using Django.",

@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 const about = {
   title: "About me",
-  description: "My journey has equipped me with diverse skills in software development, data science, and machine learning. My projects include creating a blockchain-based blood registry, which won first place at the Smart India Hackathon 2022, and developing a smart form system using machine learning to prevent repetitive project selections. I’m proficient in various programming languages, web development tools, and cloud platforms.",
+  description: "My journey has equipped me with diverse skills in software development, data science, and machine learning. I have worked on impactful projects, such as creating a blockchain-based blood registry, which won 1st place at the Smart India Hackathon 2022, and developing a smart form system using machine learning to prevent repetitive project selections. I am proficient in Python, Java, JavaScript, React, Kubernetes, Docker, and cloud platforms like AWS and GCP. My academic and professional experiences have honed my ability to deliver innovative, scalable solutions to complex problems.",
   info: [
     {
       fieldName: "Name",
@@ -27,26 +27,48 @@ const about = {
   ]
 }
 
+const achievements = {
+  title: "Achievements and Certifications",
+  description: "My achievements include winning 1st place in Asia’s largest hackathon (Smart India Hackathon 2022) for a blockchain-based blood registry, enhancing healthcare transparency. I am an AWS Certified Cloud Practitioner, skilled in cloud computing. A research paper on Blockchain Implementation for Blood Registry Using Ethereum Network is under review. Academically, I achieved a 3.967/4 GPA during my MS in Computer Science at Indiana University and a 9.11/10 GPA during my BE in Computer Science, showcasing my commitment to excellence and innovation.",
+  items: [
+    {
+      issuer: "AWS Certified Cloud Practitioner",
+      duration: "August 2024",
+      link: "https://drive.google.com/file/d/1QEr2wwFyqH0ZDP1D0Ue92sDZeyMyzVDY/view?usp=sharing",
+    },
+    {
+      issuer: "Smart India Hackathon 2022, Winners",
+      duration: "August 2022",
+      link: "https://drive.google.com/file/d/1k3ChvicnuAg8HLZqQtgaxHeRCFQeh_TI/view",
+    }
+  ]
+}
+
 const experience = {
   title: "My experience",
-  description: "During my internships, I gained hands-on experience in configuring alert systems and enhancing dashboards with Grafana at Nokia Solutions and Networks. I also managed tool deployment using Kubernetes, Docker, and Helm. At Nano Robotics Embed Technologies, I developed a weather forecasting model using regression techniques and Bayesian neural networks, improving prediction accuracy. My work involved Python and scikit-learn for model development and Matplotlib for visualizations, sharpening my skills in data analysis and software development.",
+  description: "During my internships, I gained hands-on experience in configuring alert systems and enhancing dashboards with Grafana at Nokia Solutions and Networks, while streamlining deployments using Kubernetes, Docker, and Helm. At Nano Robotics Embed Technologies, I developed a weather forecasting model using regression techniques and Bayesian neural networks, improving prediction accuracy. I utilized Python and scikit-learn for model development and Matplotlib for visualizations, honing my skills in data analysis and software development. At Pramahasoft Solutions, I automated data pipelines using Python (Pandas, NumPy) and SQL, built interactive dashboards in Tableau, and developed a centralized reporting platform, reducing report generation time. Additionally, I led a team to win 1st place in Asia’s largest hackathon for creating a blockchain-based blood registry, enhancing healthcare transparency. These experiences equipped me with practical expertise in DevOps, machine learning, data analysis, and software development.",
   items: [
     {
       company: "Nokia Solutions and Networks",
-      position: "Student Intern",
+      position: "DevOps Engineer",
       duration: "February 2023 - July 2023"
     },
     {
       company: "Nano Robotics Embed Technologies",
-      position: "Technical Intern",
+      position: "Software Engineer",
       duration: "July 2022 - October 2022"
+    },
+    {
+      company: "Pramahasoft Solutions Pvt Ltd",
+      position: "Software Engineer",
+      duration: "February 2022 - June 2022"
     },
   ]
 }
 
 const education = {
   title: "My education",
-  description: "I am pursuing MS in Computer Science from Indiana University Bloomington with a 3.950/4 GPA, focusing on algorithms, software engineering, and machine learning. Previously, I earned a BE in Computer Science from BMS Institute of Technology and Management, achieving a 9.11/10 GPA, covering diverse computing disciplines.",
+  description: "I am pursuing an MS in Computer Science from Indiana University Bloomington with a 3.967/4 GPA, focusing on Applied Algorithms, Software Engineering, Data Mining, and Applied Machine Learning. Previously, I earned a BE in Computer Science from BMS Institute of Technology and Management with a 9.11/10 GPA, where I studied Data Structures, Object-Oriented Concepts, Database Management Systems, and Neural Networks. My academic journey has provided me with a strong foundation in both theoretical and practical aspects of computer science, preparing me to tackle complex technical challenges.",
   items: [
     {
       institution: "Indiana University Bloomington",
@@ -176,6 +198,7 @@ const Resume = () => {
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="achievements">Achievements & Certifications</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
@@ -205,7 +228,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">{education .description}</p>
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index)=> {
@@ -223,6 +246,27 @@ const Resume = () => {
                   </ul>
                 </ScrollArea>
               </div>  
+            </TabsContent>
+            <TabsContent value="achievements" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{achievements.title}</h3>
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">{achievements.description}</p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {achievements.items.map((item, index) => (
+                      <a key={index} href={item.link} className="block hover:text-accent">
+                        <motion.li
+                          whileHover={{ scale: 1.05 }} // Scale up on hover
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 hover:text-white"
+                        >
+                          <span className="text-accent hover:text-white">{item.duration}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left mb-4">{item.issuer}</h3>
+                        </motion.li>
+                      </a>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
             <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[30px] pb-6">

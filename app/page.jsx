@@ -11,13 +11,12 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            {/* <span>Software Developer</span> */}
             <h1 className="h1">
               Hello I'm <br />
               <span className="text-accent">Rohith Pavuluru</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              A Computer Science Master's student, excels in data science, web development, and blockchain. I am proefficient in various programmming languages and technologies.
+              A Computer Science Master's student, excels in Data Analysis, Software Engineering, and DevOps. I am proefficient in various programmming languages and technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href="/rohith_pavuluru_resume.pdf" download = "Rohith_Pavuluru_Resume">

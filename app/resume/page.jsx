@@ -96,7 +96,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "pavuluru.rohith@gmail.com"
+      fieldValue: "rohithpavuluru09@gmail.com"
     },
   ]
 }

@@ -49,9 +49,9 @@ const Contact = () => {
       title: "Email",
       description: (
         <div className="flex items-center gap-2">
-          <span>pavuluru.rohith@gmail.com</span>
+          <span>rohithpavuluru09@gmail.com</span>
           <button
-            onClick={() => copyToClipboard("pavuluru.rohith@gmail.com", "Email")}
+            onClick={() => copyToClipboard("rohithpavuluru09@gmail.com", "Email")}
             className="p-1 hover:text-accent transition-colors"
           >
             {copiedField === "Email" ? (
